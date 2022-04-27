@@ -19,7 +19,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.lang.invoke.MethodHandles;
 import java.nio.file.StandardCopyOption;
-import java.time.Duration;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
@@ -50,7 +49,7 @@ public class WebDriverOptionsTest {
 
         System.setProperty ("webdriver.chrome.driver","/home/s2o/tmp/chromedriver" );
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10L)) ;
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS) ;
         driver.manage().window().maximize() ;
         LOGGER.debug("driver started");
 
