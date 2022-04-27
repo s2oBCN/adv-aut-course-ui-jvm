@@ -18,5 +18,4 @@ public class PageObjectBase extends PageObject {
     protected void resetDocument() {
         document = null;
     }
-
 }

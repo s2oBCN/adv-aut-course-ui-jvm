@@ -7,7 +7,7 @@ public final class UserBuilder {
     private UserBuilder() {
     }
 
-    public static UserBuilder anUser() {
+    public static UserBuilder aUser() {
         return new UserBuilder();
     }
 

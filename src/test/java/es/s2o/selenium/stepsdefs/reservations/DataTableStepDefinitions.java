@@ -18,5 +18,4 @@ public class DataTableStepDefinitions {
     public Object defaultTransformer(Object fromValue, Type toValueType) {
         return objectMapper.convertValue(fromValue, objectMapper.constructType(toValueType));
     }
-
 }
